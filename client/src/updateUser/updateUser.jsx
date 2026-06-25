@@ -20,7 +20,7 @@ const Update = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/user/${id}`)
+      .get(`https://crud-5ir5.onrender.com/api/user/${id}`)
       .then((response) => {
         setUser(response.data);
       })
@@ -32,7 +32,7 @@ const Update = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     const response = await axios
-      .put(`http://localhost:8000/api/user/${id}`, user)
+      .put(`https://crud-5ir5.onrender.com/api/user/${id}`, user)
       .then((response) => {
         toast.success(response.data.message, { position: "top-right" });
         navigate("/");

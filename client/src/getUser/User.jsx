@@ -10,7 +10,9 @@ const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/user");
+        const response = await axios.get(
+          "https://crud-5ir5.onrender.com/api/user",
+        );
         setUsers(response.data);
       } catch (error) {
         console.log("Error while fetching data", error);
@@ -21,7 +23,7 @@ const User = () => {
   const deleteUser = async (userId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/user/${userId}`,
+        `https://crud-5ir5.onrender.com/api/user/${userId}`,
       );
 
       setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
