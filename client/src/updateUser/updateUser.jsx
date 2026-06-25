@@ -31,7 +31,7 @@ const Update = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
-    const response = await axios
+    await axios
       .put(`https://crud-5ir5.onrender.com/api/user/${id}`, user)
       .then((response) => {
         toast.success(response.data.message, { position: "top-right" });
