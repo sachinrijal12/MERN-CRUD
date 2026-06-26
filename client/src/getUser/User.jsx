@@ -11,7 +11,7 @@ const User = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://crud-5ir5.onrender.com/api/user",
+          "https://merncrud-yv69.onrender.com/api/user",
         );
         setUsers(response.data);
       } catch (error) {
@@ -23,7 +23,7 @@ const User = () => {
   const deleteUser = async (userId) => {
     try {
       const response = await axios.delete(
-        `https://crud-5ir5.onrender.com/api/user/${userId}`,
+        `https://merncrud-yv69.onrender.com/api/user/${userId}`,
       );
 
       setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
