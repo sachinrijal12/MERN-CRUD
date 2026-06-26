@@ -44,7 +44,7 @@ const Update = () => {
   return (
     <div className="addUser">
       <Link to="/" type="button" class="btn btn-secondary">
-        <i class="fa-solid fa-backward"></i>
+        <i className="fa-solid fa-backward"></i>
         Back
       </Link>
       <h3>Update User</h3>

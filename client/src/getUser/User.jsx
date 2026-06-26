@@ -39,8 +39,8 @@ const User = () => {
 
   return (
     <div className="userTable">
-      <Link to="/add" type="button" class="btn btn-primary">
-        <i class="fa-solid fa-user-plus"> </i> User Add
+      <Link to="/add" type="button" className="btn btn-primary">
+        <i className="fa-solid fa-user-plus"> </i> User Add
       </Link>
       {users.length === 0 ? (
         <div className="noData">
@@ -79,7 +79,7 @@ const User = () => {
                     <button
                       onClick={() => deleteUser(user._id)}
                       type="button"
-                      class="btn btn-danger"
+                      className="btn btn-danger"
                     >
                       {" "}
                       <i class="fa-solid fa-trash"></i>
